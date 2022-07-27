@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <h1>Đồ án cuối kì CS105</h1>
+        </div>
+
+
+        <ul class="list-item">
+            <li class="item">
+                <a href="#">
+                    Geometry
+                </a>
+                <ul class="subnav geometrysub">
+                    <li class="subitem">
+                        <a href="#" id='box' onclick="addMesh(1);">
+                            Box
+                        </a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#" onclick="addMesh(2);">Sphere</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#" onclick="addMesh(3);">Cone</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#" onclick="addMesh(4);">Cylinder</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#" onclick="addMesh(5);">Torus</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#">Teapot</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Surface</a>
+                <ul class="subnav surface">
+                    <li class="subitem">
+                        <a href="#" >Point</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#">Line</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#">Solid</a>
+                    </li>
+                    <li class="subitem">
+                        <a href="#">Select Texture</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item">
+                <a href="#">Lights</a>
+            </li>
+            <li class="item">
+                <a href="#">Animation</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="webgl">
+        <script src="./assets/lib/three.js"></script>
+        <script src="./assets/lib/OrbitControls.js"></script>
+        <script src="./assets/lib/dat.gui.min.js"></script>
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>
